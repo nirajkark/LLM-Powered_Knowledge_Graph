@@ -1,0 +1,32 @@
+{
+  "nodes": [
+    {
+      "id": "Nepal",
+      "label": "Nepal"
+    },
+    {
+      "id": "country",
+      "label": "country"
+    },
+    {
+      "id": "Its",
+      "label": "Its"
+    },
+    {
+      "id": "Kathmandu",
+      "label": "Kathmandu"
+    }
+  ],
+  "edges": [
+    {
+      "source": "Nepal",
+      "target": "country",
+      "label": "type"
+    },
+    {
+      "source": "Its",
+      "target": "Kathmandu",
+      "label": "capital"
+    }
+  ]
+}

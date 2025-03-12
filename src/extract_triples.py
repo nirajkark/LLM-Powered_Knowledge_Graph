@@ -1,6 +1,7 @@
 from transformers import pipeline
 import re
 
+
 nlp = pipeline("ner", model="distilbert-base-uncased", tokenizer="distilbert-base-uncased")
 
 def extract_triples(text):
@@ -33,7 +34,7 @@ def extract_triples(text):
     return triples
 
 
-with open("../data/input.txt", "r") as f:
+with open("./data/input.txt", "r") as f:
     text = f.read()
 
 triples = extract_triples(text)

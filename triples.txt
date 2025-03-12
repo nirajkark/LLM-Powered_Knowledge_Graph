@@ -1,0 +1,2 @@
+Nepal,is_a,country
+Its,capital,Kathmandu
