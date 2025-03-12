@@ -31,31 +31,31 @@ This project extracts relational triples (subject → predicate → object) from
 ## Project Structure
 dynamic-knowledge-graph/
 ├── data/
-│   ├── input/              # Text files for multiple countries
+│   ├── input/                    # Text files for multiple countries
 │   │   ├── nepal_en.txt
 │   │   ├── india_en.txt
 │   │   ├── canada_en.txt
 │   │   ├── brazil_en.txt
 │   │   ├── japan_en.txt
 │   │   └── [UPDATE HERE: e.g., china_en.txt]
-│   └── processed/          # Exported JSON data
+│   └── processed/                # Exported JSON data
 │       └── graph_data.json
 ├── src/
-│   ├── extractors/         # Triple extraction scripts
-│   │   └── extract_en.py   # Enhanced English extractor
-│   ├── loader/             # Neo4j loading script
+│   ├── extractors/               # Triple extraction scripts
+│   │   └── extract_en.py         # Enhanced English extractor
+│   ├── loader/                   # Neo4j loading script
 │   │   └── load_neo4j.py
-│   └── queries/            
+│   └── queries/
 │       └── query_graph.py
 ├── web/
-│   ├── static/             
-│   │   └── graph_data.json
-│   ├── templates/          # HTML templates
+│   ├── static/                   # Static HTML templates
 │   │   └── index.html
-│   └── app.py              # Flask web app
-├── .gitignore             
-├── README.md               
-└── requirements.txt        # Python dependencies
+│   ├── templates/                # HTML templates
+│   │   └── index.html
+│   └── app.py                    # Flask web app
+├── .gitignore
+└── README.md
+
 
 
 ---
