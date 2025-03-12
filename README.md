@@ -52,7 +52,7 @@ This project extracts relational triples (subject → predicate → object) from
      pip install -r requirements.txt
 3. Install Neo4j Desktop (password: "password").
 4. Install Node.js deps:
-5.  ```bash
+5.    ```bash
 6.       cd visualization && npm install
 
 ## Run
