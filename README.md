@@ -28,37 +28,6 @@ This project extracts relational triples (subject → predicate → object) from
 
 ---
 
-## Project Structure
-dynamic-knowledge-graph/
-├── data/
-│   ├── input/                    # Text files for multiple countries
-│   │   ├── nepal_en.txt
-│   │   ├── india_en.txt
-│   │   ├── canada_en.txt
-│   │   ├── brazil_en.txt
-│   │   ├── japan_en.txt
-│   │   └── [UPDATE HERE: e.g., china_en.txt]
-│   └── processed/                # Exported JSON data
-│       └── graph_data.json
-├── src/
-│   ├── extractors/               # Triple extraction scripts
-│   │   └── extract_en.py         # Enhanced English extractor
-│   ├── loader/                   # Neo4j loading script
-│   │   └── load_neo4j.py
-│   └── queries/
-│       └── query_graph.py
-├── web/
-│   ├── static/                   # Static HTML templates
-│   │   └── index.html
-│   ├── templates/                # HTML templates
-│   │   └── index.html
-│   └── app.py                    # Flask web app
-├── .gitignore
-└── README.md
-
-
-
----
 
 ## Getting Started
 
@@ -67,7 +36,7 @@ dynamic-knowledge-graph/
 - **Neo4j Desktop** (or Docker for Neo4j)
 - **Node.js** (optional, for development)
 - A web browser (e.g., Chrome, Firefox)
-- **[UPDATE HERE: e.g., Minimum 8GB RAM recommended for large datasets]**
+- 
 
 ### Installation
 1. **Clone the Repository**:
@@ -75,13 +44,16 @@ dynamic-knowledge-graph/
    git clone https://github.com/nirajkark/LLM-Powered_Knowledge_Graph.git
    cd dynamic-knowledge-graph
 
-# LLM-Powered_Knowledge_Graph# LLM-Powered Knowledge Graph Demo
-Extracts triples from Nepal text using DistilBERT, stores them in Neo4j, and visualizes with Neovis.js.
+
 
 ## Setup
-1. Install Python deps: `pip install -r requirements.txt`
-2. Install Neo4j Desktop (password: "password").
-3. Install Node.js deps: `cd visualization && npm install`
+1. Install Python deps:
+2.   ```bash
+     pip install -r requirements.txt
+3. Install Neo4j Desktop (password: "password").
+4. Install Node.js deps:
+5.  ```bash
+6.       cd visualization && npm install
 
 ## Run
 1. Extract triples: `python src/extract_triples.py`
